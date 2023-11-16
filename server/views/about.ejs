@@ -1,0 +1,45 @@
+<% include partials/header.ejs %>
+<% include partials/main_nav.ejs %>
+<main>
+  <div class="jumbotran jumbotran-fluid">
+    <div class="container">
+      <h1 class="display-4"> <%= title %></h1>
+      
+        <div class="row">
+            <div class="col-lg-5">
+                <video width="100%" controls>
+                <!-- Video source options -->
+                    <source src="/asset/videos/about_me.mp4" type="video/mp4">
+                    <source src="/asset/videos/about_me.ogv" type="video/ogv">
+                    Your browser doesn't support the HTML5 video tag. <!-- Message for unsupported browsers -->
+                </video>
+                <p>NOTE: video is out of date concerning how this site was constructed.</p>
+            </div>
+
+            <div class="col-lg-3">
+                <img src="/asset/images/photo_of_me.png" alt="A picture of me!" class="img-fluid" style="max-width: 100%;">
+            </div>
+
+            <div class="col-lg-4">
+                <article class="mt-4">
+                    <p>
+                    My name is Christopher Kadianos. 
+                    I'm in my second year of university, and my degree is a BIT in Technology Management. 
+                    This portfolio website is for my INFR-3120 Web & Script Programming class. Unfortunately, 
+                    I'm having a very hard time wrapping my head around HTML and CSS. 
+                    I find the way the two "languages" interact unintuitive.
+                    </p>
+                    <p>This Website is made with NodeJS, ExpressJS, Bootstrap, and MongoDB. On a theoretical level, I understand 
+                    the "design process" of making a website with these tools, but in practice 
+                    i have a very hard time keeping track of how each individual tool/ component 
+                    interacts with one another. Especially when it comes to the new database content...
+                    </p>
+                </article>
+            </div>
+        </div>
+
+    </div>
+  </div>
+</main>
+<% include partials/bottom_nav.ejs %>
+<% include partials/footer.ejs %>
