@@ -10,60 +10,60 @@
 
             <form class="form" method="POST">
                 <div class="form-group">
-                    <label for="nameTextField">Book Title</label>
+                    <label for="nameTextField">Assignment Name</label>
                     <input type="text" class="form-control"
                     id="nameTextField"
-                    placeholder="Enter the Book Title"
+                    placeholder="Enter the Assignment's Name"
                     name="Name" 
-                    value="<%= Book.Name %>"
+                    value="<%= Assignment.Name %>"
                     required>
                 </div>
 
                 <div class="form-group">
-                    <label for="authorTextField">Author</label>
+                    <label for="classTextField">Class</label>
                     <input type="text" class="form-control"
-                    id="authorTextField"
-                    placeholder="Enter the Book's Author"
-                    name="Author" 
-                    value="<%= Book.Author %>"
+                    id="classTextField"
+                    placeholder="Enter the Class's Name"
+                    name="Class" 
+                    value="<%= Assignment.Class %>"
                     required>
                 </div>
 
                 <div class="form-group">
-                    <label for="publishedTextField">Year</label>
+                    <label for="dueTextField">Due</label>
                     <input type="text" class="form-control"
-                    id="publishedTextField"
-                    placeholder="Enter the Year of Publication"
-                    name="Published" 
-                    value="<%= Book.Published %>"
+                    id="dueTextField"
+                    placeholder="Enter the Due Date"
+                    name="Due" 
+                    value="<%= Assignment.Due %>"
                     required>
                 </div>
 
                 <div class="form-group">
-                    <label for="descriptionTextArea">Description</label>
+                    <label for="worthTextArea">Worth</label>
                     <textarea type="text" class="form-control"
-                    id="descriptionTextArea"
-                    placeholder="Enter the a brief description of the book"
-                    name="Description" 
+                    id="worthTextArea"
+                    placeholder="Enter the Assignment's Worth"
+                    name="Worth" 
                     required>
-                    <%= Book.Description %>
+                    <%= Assignment.Worth %>
                     </textarea>
                 </div>
 
                 <div class="form-group">
-                    <label for="priceTextField">Price</label>
+                    <label for="gradeTextField">Grade</label>
                     <input type="text" class="form-control"
-                    id="priceTextField"
-                    placeholder="Enter the Book's Price"
-                    name="Price" 
-                    value="<%= Book.Price %>"
+                    id="gradeTextField"
+                    placeholder="Enter the Assignment's Recieved Grade"
+                    name="Grade" 
+                    value="<%= Assignment.Grade %>"
                     required>
                 </div>
 
                 <button class="btn btn-primary" type="submit">
                     <i class="fas fa-edit"></i> Submit</button>
                 
-                    <a href="/bookslist" class="btn btn-warning">
+                    <a href="/assignments" class="btn btn-warning">
                         <i class="fas fa-undo"></i> Cancel</a>
 
             </form>
